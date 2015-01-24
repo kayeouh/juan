@@ -1,0 +1,63 @@
+/*
+* Grid
+*/
+
+%grid-container,
+.grid-container {
+  width: 100%; 
+  margin-left: (-$grid-spacing);
+  margin-right: (-$grid-spacing);
+  @extend %float-clear;
+}
+
+.third,
+.fourth,
+.half,
+.two-third,
+.fifth,
+.two-fifth,
+.three-fifth,
+.full {
+  padding: 0 $grid-spacing;
+  float: left;
+}
+
+%third,
+.third {
+  width: (100%/3);
+}
+%fourth,
+.fourth {
+  width: (100%/4);
+}
+%half,
+.half {
+  width: 100%; 
+  @include breakpoint-min($desktop){
+    width: (100%/2);
+  }
+}
+%two-third,
+.two-third {
+  width: (100%/3) * 2;
+}
+%three-fourth,
+.three-fourth {
+  width: (100%/4) * 3;
+}
+%fifth,
+.fifth {
+  width: (100%/5);
+}
+%two-fifth,
+.two-fifth {
+  width: (100%/5) * 2;
+}
+%three-fifth,
+.three-fifth {
+  width: (100%/5) * 3;
+}
+%full,
+.full {
+  width: 100%;
+}

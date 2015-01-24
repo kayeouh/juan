@@ -1,0 +1,68 @@
+/* 
+* Setup Sass variables
+* 1. Sizes
+* 2. Fonts
+* 3. Colors
+*/
+
+
+/* Sizes */
+$max-width: 1200px;
+$margin: 60px;
+$grid-spacing: 30px;
+
+
+/* Typography */
+
+$line-height: 1.6;
+
+/**** Colors ****/ 
+
+/* Bolds */
+
+//Blues 
+$blue: #2980B9;
+
+/* Neutrals */
+
+//Whites
+$white: #ECEAEE; 
+
+//Grays
+$gray-dark: #ACB0BD;
+$gray-light: #D0CDD7; 
+$slate: #D9DBF1;
+
+
+/* Breakpoints */
+$desktop-xl: 1180px;
+$desktop-lg: 1120px;
+$desktop: 1020px;
+$desktop-sm: 920px;
+$tablet-lg: 850px;
+$tablet: 720px;
+$mobile: 620px;
+
+
+/**** Fonts ****/
+$open-sans: 'Open Sans', Helvetica, sans-serif;
+$open-sans-condensed: 'Open Sans Condensed', Helvetica, sans-serif;
+$din-condensed: 'Din Condensed', Helvetica, sans-serif; 
+$linux-libertine: 'Linux Libertine', Arial, serif; 
+$tusj: 'Tusj', Helvetica, sans-serif; 
+
+
+/**** Images ****/
+
+/* Arrows */
+$arrow-purple: url("../images/arrow-purple.svg");
+$arrow-white: url("../images/arrow-white.svg");
+
+/* Logos */
+$logo-color: url("../images/logo-color.png");
+$logo-white: url("../images/logo-white.png");
+
+/* Background Images */
+$yellow-lines-background: url("../images/yellow-lines-square.svg");
+$ampersand-background: url("../images/ampersand.svg");
+

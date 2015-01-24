@@ -1,0 +1,41 @@
+/*
+* Transforms
+*/
+
+%skewed-after{
+	position: relative; 
+	width: calc(100% - 50px);
+	&:after{
+		content: "";
+		position: absolute; 
+		top: 0; 
+		right: -30px; 
+		display: inline-block; 
+		width: 50px; 
+		height: 100%; 
+		background-color: red; 
+		z-index: -1; 
+		transform: skew(4deg, 0deg);
+	}
+}
+
+%slide-toggle, .slide-toggle{
+	transition: transform 0.3s ease-out; 
+}
+
+%top-toggle, .top-toggle{
+	transition: top 0.7s ease-out; 
+}
+
+%fade-toggle, .fade-toggle{
+	transition: opacity 0.2s ease-out; 
+}
+
+%show-toggle{
+	transition: display 0.2s ease-out; 
+}
+
+%toggle-uri{
+	opacity: 1; 
+  -webkit-transition: opacity 1s ease 0.25s; 
+}

@@ -1,0 +1,36 @@
+/* Fonts */
+
+//Linux Libertine
+%ll300, .ll300 {
+  font-family: $linux-libertine; 
+  font-weight: 300; 
+}
+
+%ll400, .ll400 {
+  font-family: $linux-libertine; 
+  font-weight: 400; 
+}
+
+%ll700, .ll700 {
+  font-family: $linux-libertine; 
+  font-weight: 700; 
+}
+
+
+//Tusj
+%t300, .t300 {
+  font-family: $tusj; 
+  font-weight: 300; 
+}
+
+%t400, .t400 {
+  font-family: $tusj; 
+  font-weight: 400; 
+}
+
+%t700, .t700 {
+  font-family: $tusj; 
+  font-weight: 700; 
+}
+
+
