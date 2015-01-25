@@ -2,3 +2,22 @@
 * Sections
 */
 
+section{
+	padding: $section-padding; 
+}
+
+.section-slate{
+	background-color: $slate; 
+}
+
+.section-gray-dark{
+	background-color: $gray-dark; 
+}
+
+.section-gray-light{
+	background-color: $gray-light; 
+}
+
+.section-blue{
+	background-color: $blue; 
+}

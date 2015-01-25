@@ -33,4 +33,25 @@
   font-weight: 700; 
 }
 
+//Airbag
+%a300, .a300 {
+  font-family: $airbag; 
+  font-weight: 300; 
+  text-transform: uppercase; 
+}
+
+%a400, .a400 {
+  font-family: $airbag; 
+  font-weight: 400; 
+  text-transform: uppercase; 
+
+}
+
+%a700, .a700 {
+  font-family: $airbag; 
+  font-weight: 700; 
+  text-transform: uppercase; 
+
+}
+
 

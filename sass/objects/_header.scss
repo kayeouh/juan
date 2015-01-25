@@ -3,7 +3,32 @@
 */
 
 header{
+	width: 100%; 
+	text-align: center; 
+	background-color: $slate; 
+	padding-top: $section-padding; 
 }
 
 .header-inner{
+	padding: 0 $section-padding; 
+}
+
+.logo{
+	width: 200px; 
+	height: auto; 
+	display: inline-block; 
+	img{
+		max-width: 100%; 
+		height: auto; 
+	}
+}
+
+.current-section-title{
+	opacity: 0;  
+	position: absolute; 
+	left: 20px; 
+	line-height: 80px; 
+	@include font-size(50);
+	@extend %fade-toggle; 
+	@extend %a300; 
 }

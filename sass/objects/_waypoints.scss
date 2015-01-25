@@ -1,0 +1,27 @@
+/*
+* Specific classes pertaining to Waypoint functionality
+*/
+
+//waypoints
+
+.header-sticky{
+	background-color: $slate; 
+	width: 100%; 
+}
+.stuck{
+	position:fixed;
+	top: 0;
+	.current-section-title{
+		opacity: 1;  
+		@extend %fade-toggle; 
+	}
+	.menu-container{
+		height: 80px; 
+		svg{
+			width: 100px; 
+			height: 80px;
+			right: 20px; 
+		}
+	}
+
+}

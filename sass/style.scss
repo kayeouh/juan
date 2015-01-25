@@ -31,7 +31,7 @@
    Fonts 
    ========================================================================== */
 
-//Din Condensed
+//Tusj
 @font-face {
     font-family: 'Tusj';
     src: url('../fonts/fff_tusj-webfont.eot');
@@ -43,6 +43,7 @@
     font-style: normal;
 }
 
+//Linux Libertine
 @font-face {
     font-family: 'Linux Libertine';
     src: url('../fonts/linlibertine_dr-webfont.eot');
@@ -50,6 +51,18 @@
                 url('../fonts/linlibertine_dr-webfont.woff') format('woff'),
                 url('../fonts/linlibertine_dr-webfont.ttf') format('truetype'),
                 url('../linlibertine_dr-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//Airbag
+@font-face {
+    font-family: 'Airbag';
+    src: url('../fonts/airbag-regular-webfont.eot');
+    src: url('../fonts/airbag-regular-webfont.eot?#iefix') format('embedded-opentype'),
+                url('../fonts/airbag-regular-webfont.woff') format('woff'),
+                url('../fonts/airbag-regular-webfont.ttf') format('truetype'),
+                url('../airbag-regular-webfont.svg#bebas_neueregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
