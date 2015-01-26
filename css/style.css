@@ -135,7 +135,7 @@ body, .ll400 {
 }
 
 /* line 14, ../sass/base/_fonts.scss */
-.ll700 {
+.subheader, .ll700 {
   font-family: "Linux Libertine", Arial, serif;
   font-weight: 700;
 }
@@ -1091,30 +1091,51 @@ header {
 */
 /* line 5, ../sass/objects/_sections.scss */
 section {
-  padding: 60px;
+  padding: 60px 30px;
+  position: relative;
 }
 
-/* line 9, ../sass/objects/_sections.scss */
+/* line 10, ../sass/objects/_sections.scss */
 .section-slate {
   background-color: #D9DBF1;
 }
 
-/* line 13, ../sass/objects/_sections.scss */
-.section-gray-dark {
+/* line 14, ../sass/objects/_sections.scss */
+.section-gray-dark, .section-gray-dark-watercolor {
   background-color: #ACB0BD;
 }
 
-/* line 17, ../sass/objects/_sections.scss */
+/* line 18, ../sass/objects/_sections.scss */
 .section-gray-light {
   background-color: #D0CDD7;
 }
 
-/* line 21, ../sass/objects/_sections.scss */
+/* line 22, ../sass/objects/_sections.scss */
 .section-blue {
   background-color: #2980B9;
 }
 
+/* line 32, ../sass/objects/_sections.scss */
+.section-gray-dark-watercolor:after {
+  content: "";
+  background-image: url("../images/backgrounds/watercolor.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.2;
+  z-index: 1;
+}
+
 /* Special Text Styles */
+/* line 3, ../sass/objects/_text.scss */
+.subheader {
+  font-size: 30px;
+  font-size: 3rem;
+}
+
 /*
 * Transforms
 */
@@ -1154,6 +1175,21 @@ section {
           transition: margin-top 0.3s ease-out;
 }
 
+/* line 55, ../sass/objects/_transforms.scss */
+.circle-image-left {
+  width: 50%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
+  -webkit-shape-outside: border-box;
+          shape-outside: border-box;
+  -webkit-shape-margin: 20px;
+          shape-margin: 20px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
 /*
 * Specific classes pertaining to Waypoint functionality
 */
@@ -1167,16 +1203,17 @@ section {
 .stuck {
   position: fixed;
   top: 0;
+  z-index: 2;
 }
-/* line 14, ../sass/objects/_waypoints.scss */
+/* line 15, ../sass/objects/_waypoints.scss */
 .stuck .current-section-title {
   opacity: 1;
 }
-/* line 18, ../sass/objects/_waypoints.scss */
+/* line 19, ../sass/objects/_waypoints.scss */
 .stuck .menu-container {
   height: 80px;
 }
-/* line 20, ../sass/objects/_waypoints.scss */
+/* line 21, ../sass/objects/_waypoints.scss */
 .stuck .menu-container svg {
   width: 100px;
   height: 80px;

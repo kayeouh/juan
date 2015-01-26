@@ -11,6 +11,7 @@
 .stuck{
 	position:fixed;
 	top: 0;
+	z-index: 2; 
 	.current-section-title{
 		opacity: 1;  
 		@extend %fade-toggle; 

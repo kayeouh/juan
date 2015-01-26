@@ -3,7 +3,8 @@
 */
 
 section{
-	padding: $section-padding; 
+	padding: $section-padding $section-padding/2; 
+	position: relative; 
 }
 
 .section-slate{
@@ -21,3 +22,23 @@ section{
 .section-blue{
 	background-color: $blue; 
 }
+
+.section-gray-dark-watercolor{
+	@extend .section-gray-dark; 
+	@extend %bg-watercolor; 
+}
+
+%bg-watercolor{
+	&:after{
+		content: ""; 
+		background-image: $watercolor-background; 
+		background-size: cover; 
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		bottom: 0; 
+		right: 0; 
+		opacity: 0.2; 
+		z-index: 1; 
+	}
+} 

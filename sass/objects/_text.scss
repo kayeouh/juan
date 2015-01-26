@@ -1,6 +1,7 @@
 /* Special Text Styles */
 
-
-
-
+.subheader{
+	@extend %ll700; 
+	@include font-size(30);
+}
 
