@@ -31,8 +31,13 @@ $white: #ECEAEE;
 //Grays
 $gray-dark: #ACB0BD;
 $gray-light: #D0CDD7; 
-$slate: #D9DBF1;
+// $slate: #D9DBF1;
+$slate: #C4A77D;
 
+
+//Browns
+// $dun: #C4A77D; 
+$dun: #D6B78F; 
 
 /* Breakpoints */
 $desktop-xl: 1180px;
@@ -65,4 +70,8 @@ $logo-white: url("../images/logo-white.png");
 
 /* Background Images */
 $watercolor-background: url("../images/backgrounds/watercolor.jpg");
+$crosshatch-background: url("../images/backgrounds/crosshatch.jpg");
+$vertical-sketch-line-background: url("../images/backgrounds/vertical-sketch-lines.jpg");
+$marker-background: url("../images/backgrounds/marker.jpg");
+
 

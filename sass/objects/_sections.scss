@@ -5,10 +5,61 @@
 section{
 	padding: $section-padding $section-padding/2; 
 	position: relative; 
+	.inner{
+		position: relative; 
+		z-index: 1; 
+	}
 }
 
-.section-slate{
-	background-color: $slate; 
+%bg-image-overlay{
+	&:after{
+		content: ""; 
+		background-size: cover; 
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		bottom: 0; 
+		right: 0; 
+		z-index: 0; 
+	}	
+}
+
+%bg-watercolor, .bg-watercolor{
+	@extend %bg-image-overlay; 
+	&:after{
+		background-image: $watercolor-background; 
+		opacity: 0.2;  
+	}
+} 
+
+%bg-crosshatch, .bg-crosshatch{
+	@extend %bg-image-overlay; 
+	&:after{
+		background-image: $crosshatch-background; 
+		opacity: 0.1;  
+	}
+}
+
+%bg-vertical-sketchy, .bg-vertical-sketchy{
+	@extend %bg-image-overlay; 
+	&:after{
+		background-image: $vertical-sketch-line-background; 
+		opacity: 0.1;  
+	}
+}
+
+%bg-marker, .bg-marker{
+	@extend %bg-image-overlay; 
+	&:after{
+		background-image: $marker-background; 
+		opacity: 0.1;  
+	}
+}
+
+
+
+.section-dun{
+	background-color: $dun; 
 }
 
 .section-gray-dark{
@@ -23,22 +74,3 @@ section{
 	background-color: $blue; 
 }
 
-.section-gray-dark-watercolor{
-	@extend .section-gray-dark; 
-	@extend %bg-watercolor; 
-}
-
-%bg-watercolor{
-	&:after{
-		content: ""; 
-		background-image: $watercolor-background; 
-		background-size: cover; 
-		position: absolute; 
-		top: 0; 
-		left: 0; 
-		bottom: 0; 
-		right: 0; 
-		opacity: 0.2; 
-		z-index: 1; 
-	}
-} 

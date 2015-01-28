@@ -5,8 +5,8 @@
 header{
 	width: 100%; 
 	text-align: center; 
-	background-color: $slate; 
-	padding-top: $section-padding; 
+	background-color: $white; 
+	padding: $section-padding 0; 
 }
 
 .header-inner{
@@ -28,7 +28,7 @@ header{
 	position: absolute; 
 	left: 20px; 
 	line-height: 80px; 
-	@include font-size(50);
+	@include font-size(52);
 	@extend %fade-toggle; 
 	@extend %a300; 
 }
