@@ -1,0 +1,35 @@
+/* ==========================================================================
+   "Skills" Section Elements
+   ========================================================================== */
+
+%skill-icon-base{
+	@extend %sprite-before; 
+	width: 100px; 
+	height: 100px; 
+	@extend %size-toggle; 
+	&:before{
+		transition: scale 0.3s ease-out; 
+	}
+	@include breakpoint-min($tablet-lg){
+		width: 300px; 
+		height: 300px; 
+		&:before{
+			transform: scale(3);
+			transform-origin: 0 0; 
+		}
+	}
+}
+
+.skill-photoshop{
+	@extend %skill-icon-base;
+	&:before{
+		@extend .svg-ps-logo; 
+	}
+}
+
+.skill-illustrator{
+	@extend %skill-icon-base;
+	&:before{
+		@extend .svg-ai-logo; 
+	}
+}

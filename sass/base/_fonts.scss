@@ -44,14 +44,39 @@
   font-family: $airbag; 
   font-weight: 400; 
   text-transform: uppercase; 
-
 }
 
 %a700, .a700 {
   font-family: $airbag; 
   font-weight: 700; 
   text-transform: uppercase; 
+}
 
+//Modum 
+%m300, .m300 {
+  font-family: $modum; 
+  font-weight: 300; 
+}
+
+%m400, .m400 {
+  font-family: $modum; 
+  font-weight: 400; 
+}
+
+%m700, .m700 {
+  font-family: $modum; 
+  font-weight: 700; 
+}
+
+//Vollkorn
+%v400, .v400 {
+  font-family: $vollkorn; 
+  font-weight: 400; 
+}
+
+%v700, .v700 {
+  font-family: $vollkorn; 
+  font-weight: 700; 
 }
 
 

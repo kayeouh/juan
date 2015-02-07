@@ -1,0 +1,64 @@
+/* ==========================================================================
+Work (The Pretty Pictures)
+========================================================================== */
+
+$dark-gray-gradient: rgba($gray-dark, 0.9);
+$blue-gradient: rgba($blue, 0.9);
+
+$dun-gradient: rgba($dun, 0.9);
+$light-gray-gradient: rgba($gray-light, 0.9);
+
+.tile-container{
+	// display: flex; 
+	// flex-direction: row; 
+	// flex-wrap: wrap; 
+	// justify-content: flex-start; 
+	// align-items: stretch; 
+	.tile:nth-child(odd){
+		.tile-description{
+			@include background-image(linear-gradient($dun-gradient, $light-gray-gradient));
+
+		}
+	}
+}
+
+.tile{
+	width: 100%; 
+	position: relative; 
+	overflow: hidden; 
+	line-height: 0; 
+	cursor: pointer; 
+	display: inline-block; 
+	border-width: 0 20px 20px 0; 
+	border-image: $slanted-lines-background 7 round; 
+	background-size: 100%; 
+	img{
+		width: inherit; 
+		height: auto; 
+		margin: 0; 
+		padding: 0; 
+	}
+	@include breakpoint-min($tablet-lg){
+		max-width: 50%; 
+	}
+} 
+
+.tile-description{
+	position: absolute;
+	top: -100%;
+	width: 100%;
+	height: 100%;
+	line-height: 1.2; 
+	padding: 20px; 
+	.title{
+		@extend %a400; 
+		@include font-size(52);
+		text-align: center;
+	}
+	@include background-image(linear-gradient($dark-gray-gradient, $blue-gradient));
+	@extend %top-toggle; 
+	&.show{
+		@extend %top-toggle; 
+		top: 0; 
+	} 
+}

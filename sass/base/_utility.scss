@@ -59,5 +59,20 @@ img.max-width   { width: 100%; height: auto; }
   color: inherit; 
 }
 
+//sprite "after" utility
+
+%sprite-before{
+	position: relative; 
+	display: inline-block; 
+	&:before{		
+		content: "";
+		display: block; 
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+	}
+}
+
+
 
 

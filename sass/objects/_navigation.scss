@@ -78,6 +78,9 @@
 		text-transform: uppercase; 
 		display: block; 
 	}
+	a{
+		@extend %plain-link; 
+	}
 }
 
 .nav-inner{

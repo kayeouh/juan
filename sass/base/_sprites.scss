@@ -3,107 +3,19 @@
     background-image: url(../images/sprites/sprite.svg);
 }
 
-.svg-arrow-up-icon {
-    background-position: 74.93112947658402% 21.53846153846154%;
-    @extend %svg-common;
-    width: 31px;
-    height: 31px;
-}
-
-
-.svg-close-icon {
-    background-position: 65.92592592592592% 22.580645161290324%;
-    @extend %svg-common;
-    width: 40px;
-    height: 40px;
-}
-
-
-.svg-download-icon {
-    background-position: 62.430939226519335% 22.82608695652174%;
-    @extend %svg-common;
-    width: 34px;
-    height: 42px;
-}
-
-
-.svg-fb {
-    background-position: 76.58227848101266% 21.417644059153492%;
-    @extend %svg-common;
-    width: 14px;
-    height: 29.9px;
-}
-
-
-.svg-fb-icon {
-    background-position: 72.05882352941177% 21.649484536082475%;
-    @extend %svg-common;
-    width: 32px;
-    height: 32px;
-}
-
-
-.svg-gear {
-    background-position: 61.86131386861314% 52.97029702970297%;
-    @extend %svg-common;
-    width: 24px;
-    height: 24px;
-}
-
-
-.svg-google-plus {
-    background-position: 78.91842346471127% 20.895522388059703%;
-    @extend %svg-common;
-    width: 29px;
-    height: 25px;
-}
-
-
-.svg-linkedin {
-    background-position: 61.86131386861314% 41.37931034482759%;
-    @extend %svg-common;
-    width: 24px;
-    height: 23px;
-}
-
-
-.svg-logo-colored {
-    background-position: 0 100%;
-    @extend %svg-common;
-    width: 360px;
-    height: 184px;
-}
-
-
-.svg-logo-white {
-    background-position: 44.88778054862843% 64.61538461538461%;
-    @extend %svg-common;
-    width: 318px;
-    height: 161px;
-}
-
-
-.svg-top-border {
+.svg-ai-logo {
     background-position: 0 0;
     @extend %svg-common;
-    width: 1120px;
-    height: 42px;
+    width: 100px;
+    height: 100px;
 }
 
 
-.svg-twitter {
-    background-position: 81.3528336380256% 20.48780487804878%;
+.svg-ps-logo {
+    background-position: 100% 0;
     @extend %svg-common;
-    width: 26px;
-    height: 21px;
-}
-
-
-.svg-twitter-icon {
-    background-position: 69.11764705882354% 21.649484536082475%;
-    @extend %svg-common;
-    width: 32px;
-    height: 32px;
+    width: 100px;
+    height: 100px;
 }
 
 

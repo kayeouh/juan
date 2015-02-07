@@ -36,6 +36,7 @@
   left: 50%;
   @include translate(-50%, -50%);
 }
+
 @mixin breakpoint-min($break) {
   @media (min-width: $break) { @content; }
 } 

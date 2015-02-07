@@ -44,7 +44,7 @@ section{
 	@extend %bg-image-overlay; 
 	&:after{
 		background-image: $vertical-sketch-line-background; 
-		opacity: 0.1;  
+		opacity: 0.05;  
 	}
 }
 

@@ -17,6 +17,7 @@
  */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,400,700);
 /* line 10, ../sass/generic/_reset.scss */
 article,
 aside,
@@ -166,17 +167,47 @@ h1, h2, h3, h4, h5, h6, .current-section-title, .a300 {
 }
 
 /* line 43, ../sass/base/_fonts.scss */
-.a400 {
+.tile-description .title, .a400 {
   font-family: "Airbag", Helvetica, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-/* line 50, ../sass/base/_fonts.scss */
+/* line 49, ../sass/base/_fonts.scss */
 .a700 {
   font-family: "Airbag", Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+/* line 56, ../sass/base/_fonts.scss */
+.m300 {
+  font-family: "Modum", serif;
+  font-weight: 300;
+}
+
+/* line 61, ../sass/base/_fonts.scss */
+.m400 {
+  font-family: "Modum", serif;
+  font-weight: 400;
+}
+
+/* line 66, ../sass/base/_fonts.scss */
+.m700 {
+  font-family: "Modum", serif;
+  font-weight: 700;
+}
+
+/* line 72, ../sass/base/_fonts.scss */
+.v400 {
+  font-family: "Vollkorn", serif;
+  font-weight: 400;
+}
+
+/* line 77, ../sass/base/_fonts.scss */
+.v700 {
+  font-family: "Vollkorn", serif;
+  font-weight: 700;
 }
 
 /* Forms
@@ -612,100 +643,23 @@ svg:not(:root) {
 }
 
 /* line 1, ../sass/base/_sprites.scss */
-.svg-arrow-up-icon, .svg-close-icon, .svg-download-icon, .svg-fb, .svg-fb-icon, .svg-gear, .svg-google-plus, .svg-linkedin, .svg-logo-colored, .svg-logo-white, .svg-top-border, .svg-twitter, .svg-twitter-icon {
+.svg-ai-logo, .skill-illustrator:before, .svg-ps-logo, .skill-photoshop:before {
   background-repeat: no-repeat;
   background-image: url(../images/sprites/sprite.svg);
 }
 
 /* line 6, ../sass/base/_sprites.scss */
-.svg-arrow-up-icon {
-  background-position: 74.93112947658402% 21.53846153846154%;
-  width: 31px;
-  height: 31px;
+.svg-ai-logo, .skill-illustrator:before {
+  background-position: 0 0;
+  width: 100px;
+  height: 100px;
 }
 
 /* line 14, ../sass/base/_sprites.scss */
-.svg-close-icon {
-  background-position: 65.92592592592592% 22.580645161290324%;
-  width: 40px;
-  height: 40px;
-}
-
-/* line 22, ../sass/base/_sprites.scss */
-.svg-download-icon {
-  background-position: 62.430939226519335% 22.82608695652174%;
-  width: 34px;
-  height: 42px;
-}
-
-/* line 30, ../sass/base/_sprites.scss */
-.svg-fb {
-  background-position: 76.58227848101266% 21.417644059153492%;
-  width: 14px;
-  height: 29.9px;
-}
-
-/* line 38, ../sass/base/_sprites.scss */
-.svg-fb-icon {
-  background-position: 72.05882352941177% 21.649484536082475%;
-  width: 32px;
-  height: 32px;
-}
-
-/* line 46, ../sass/base/_sprites.scss */
-.svg-gear {
-  background-position: 61.86131386861314% 52.97029702970297%;
-  width: 24px;
-  height: 24px;
-}
-
-/* line 54, ../sass/base/_sprites.scss */
-.svg-google-plus {
-  background-position: 78.91842346471127% 20.895522388059703%;
-  width: 29px;
-  height: 25px;
-}
-
-/* line 62, ../sass/base/_sprites.scss */
-.svg-linkedin {
-  background-position: 61.86131386861314% 41.37931034482759%;
-  width: 24px;
-  height: 23px;
-}
-
-/* line 70, ../sass/base/_sprites.scss */
-.svg-logo-colored {
-  background-position: 0 100%;
-  width: 360px;
-  height: 184px;
-}
-
-/* line 78, ../sass/base/_sprites.scss */
-.svg-logo-white {
-  background-position: 44.88778054862843% 64.61538461538461%;
-  width: 318px;
-  height: 161px;
-}
-
-/* line 86, ../sass/base/_sprites.scss */
-.svg-top-border {
-  background-position: 0 0;
-  width: 1120px;
-  height: 42px;
-}
-
-/* line 94, ../sass/base/_sprites.scss */
-.svg-twitter {
-  background-position: 81.3528336380256% 20.48780487804878%;
-  width: 26px;
-  height: 21px;
-}
-
-/* line 102, ../sass/base/_sprites.scss */
-.svg-twitter-icon {
-  background-position: 69.11764705882354% 21.649484536082475%;
-  width: 32px;
-  height: 32px;
+.svg-ps-logo, .skill-photoshop:before {
+  background-position: 100% 0;
+  width: 100px;
+  height: 100px;
 }
 
 /* Tables
@@ -799,6 +753,12 @@ sup {
 /* line 72, ../sass/base/_typography.scss */
 sub {
   bottom: -0.25em;
+}
+
+/* line 78, ../sass/base/_typography.scss */
+p {
+  font-size: 20px;
+  font-size: 2rem;
 }
 
 /* 
@@ -906,9 +866,23 @@ img.max-width {
 }
 
 /* line 57, ../sass/base/_utility.scss */
-.plain-link {
+.primary-nav a, .plain-link {
   text-decoration: none;
   color: inherit;
+}
+
+/* line 64, ../sass/base/_utility.scss */
+.skill-photoshop, .skill-illustrator {
+  position: relative;
+  display: inline-block;
+}
+/* line 67, ../sass/base/_utility.scss */
+.skill-photoshop:before, .skill-illustrator:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* ==========================================================================
@@ -1084,19 +1058,19 @@ header {
   display: block;
 }
 
-/* line 83, ../sass/objects/_navigation.scss */
+/* line 86, ../sass/objects/_navigation.scss */
 .nav-inner {
   height: 100%;
   overflow: auto;
 }
 
-/* line 88, ../sass/objects/_navigation.scss */
+/* line 91, ../sass/objects/_navigation.scss */
 .nav-open {
   height: 100%;
   overflow: hidden;
 }
 
-/* line 93, ../sass/objects/_navigation.scss */
+/* line 96, ../sass/objects/_navigation.scss */
 .menu-button-plain {
   cursor: pointer;
   opacity: 1;
@@ -1143,7 +1117,7 @@ section .inner {
 /* line 45, ../sass/objects/_sections.scss */
 .bg-vertical-sketchy:after {
   background-image: url("../images/backgrounds/vertical-sketch-lines.jpg");
-  opacity: 0.1;
+  opacity: 0.05;
 }
 
 /* line 53, ../sass/objects/_sections.scss */
@@ -1172,6 +1146,36 @@ section .inner {
   background-color: #2980B9;
 }
 
+/* ==========================================================================
+   "Skills" Section Elements
+   ========================================================================== */
+/* line 5, ../sass/objects/_skills.scss */
+.skill-photoshop, .skill-illustrator {
+  width: 100px;
+  height: 100px;
+}
+/* line 10, ../sass/objects/_skills.scss */
+.skill-photoshop:before, .skill-illustrator:before {
+  -webkit-transition: scale 0.3s ease-out;
+          transition: scale 0.3s ease-out;
+}
+@media (min-width: 850px) {
+  /* line 5, ../sass/objects/_skills.scss */
+  .skill-photoshop, .skill-illustrator {
+    width: 300px;
+    height: 300px;
+  }
+  /* line 16, ../sass/objects/_skills.scss */
+  .skill-photoshop:before, .skill-illustrator:before {
+    -webkit-transform: scale(3);
+        -ms-transform: scale(3);
+            transform: scale(3);
+    -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+            transform-origin: 0 0;
+  }
+}
+
 /* Special Text Styles */
 /* line 3, ../sass/objects/_text.scss */
 .subheader {
@@ -1189,7 +1193,7 @@ section .inner {
 }
 
 /* line 26, ../sass/objects/_transforms.scss */
-.top-toggle {
+.tile-description, .tile-description.show, .top-toggle {
   -webkit-transition: top 0.7s ease-out;
           transition: top 0.7s ease-out;
 }
@@ -1201,7 +1205,7 @@ section .inner {
 }
 
 /* line 43, ../sass/objects/_transforms.scss */
-.menu-container, .size-toggle {
+.menu-container, .skill-photoshop, .skill-illustrator, .size-toggle {
   -webkit-transition: width 0.3s ease-out, height 0.3s ease-out;
           transition: width 0.3s ease-out, height 0.3s ease-out;
 }
@@ -1218,7 +1222,7 @@ section .inner {
           transition: margin-top 0.3s ease-out;
 }
 
-/* line 55, ../sass/objects/_transforms.scss */
+/* line 56, ../sass/objects/_transforms.scss */
 .circle-image-left {
   width: 50%;
   max-width: 300px;
@@ -1267,6 +1271,71 @@ section .inner {
 }
 
 /* ==========================================================================
+Work (The Pretty Pictures)
+========================================================================== */
+/* line 18, ../sass/objects/_work.scss */
+.tile-container .tile:nth-child(odd) .tile-description {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q2Yjc4ZiIgc3RvcC1vcGFjaXR5PSIwLjkiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkMGNkZDciIHN0b3Atb3BhY2l0eT0iMC45Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(214, 183, 143, 0.9)), color-stop(100%, rgba(208, 205, 215, 0.9)));
+  background-image: -webkit-linear-gradient(rgba(214, 183, 143, 0.9), rgba(208, 205, 215, 0.9));
+  background-image: linear-gradient(rgba(214, 183, 143, 0.9), rgba(208, 205, 215, 0.9));
+}
+
+/* line 25, ../sass/objects/_work.scss */
+.tile {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  line-height: 0;
+  cursor: pointer;
+  display: inline-block;
+  border-width: 0 20px 20px 0;
+  -webkit-border-image: url("../images/backgrounds/slanted-lines.svg") 7 round;
+       -o-border-image: url("../images/backgrounds/slanted-lines.svg") 7 round;
+          border-image: url("../images/backgrounds/slanted-lines.svg") 7 round;
+  background-size: 100%;
+}
+/* line 35, ../sass/objects/_work.scss */
+.tile img {
+  width: inherit;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 850px) {
+  /* line 25, ../sass/objects/_work.scss */
+  .tile {
+    max-width: 50%;
+  }
+}
+
+/* line 46, ../sass/objects/_work.scss */
+.tile-description {
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  line-height: 1.2;
+  padding: 20px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2FjYjBiZCIgc3RvcC1vcGFjaXR5PSIwLjkiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyOTgwYjkiIHN0b3Atb3BhY2l0eT0iMC45Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(172, 176, 189, 0.9)), color-stop(100%, rgba(41, 128, 185, 0.9)));
+  background-image: -webkit-linear-gradient(rgba(172, 176, 189, 0.9), rgba(41, 128, 185, 0.9));
+  background-image: linear-gradient(rgba(172, 176, 189, 0.9), rgba(41, 128, 185, 0.9));
+}
+/* line 53, ../sass/objects/_work.scss */
+.tile-description .title {
+  font-size: 52px;
+  font-size: 5.2rem;
+  text-align: center;
+}
+/* line 60, ../sass/objects/_work.scss */
+.tile-description.show {
+  top: 0;
+}
+
+/* ==========================================================================
    Fonts 
    ========================================================================== */
 @font-face {
@@ -1287,6 +1356,13 @@ section .inner {
   font-family: 'Airbag';
   src: url("../fonts/airbag-regular-webfont.eot");
   src: url("../fonts/airbag-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/airbag-regular-webfont.woff") format("woff"), url("../fonts/airbag-regular-webfont.ttf") format("truetype"), url("../airbag-regular-webfont.svg#bebas_neueregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Modum';
+  src: url("../fonts/modum-regular-webfont.eot");
+  src: url("../fonts/modum-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/modum-regular-webfont.woff") format("woff"), url("../fonts/modum-regular-webfont.ttf") format("truetype"), url("../modum-regular-webfont.svg#bebas_neueregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
